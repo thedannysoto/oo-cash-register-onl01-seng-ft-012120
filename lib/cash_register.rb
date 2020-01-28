@@ -18,6 +18,7 @@ class CashRegister
   end 
   
   def add_item(title, price, *quantity)
+    binding.pry 
     @prev_total = @total 
     @total += price
   end
