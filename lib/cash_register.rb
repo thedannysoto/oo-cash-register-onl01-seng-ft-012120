@@ -7,7 +7,6 @@ class CashRegister
   @prev_total = 0 
   
   def initialize(*discount)
-    if !discount.empty?
      discount(discount)
     end 
     @total = 0 
@@ -15,7 +14,7 @@ class CashRegister
   
   def discount(*discount)
    # binding.pry 
-    if !discount.empty? 
+    if !discount[0].empty? 
       @discount = 20
     end 
   end 
