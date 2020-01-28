@@ -14,8 +14,9 @@ class CashRegister
   end 
   
   def discount(*discount)
-    if discount.empty? 
-    @discount = 20 
+    if !discount.empty? 
+      @discount = 20
+    end 
   end 
   
   def add_item(title, price, *quantity)
