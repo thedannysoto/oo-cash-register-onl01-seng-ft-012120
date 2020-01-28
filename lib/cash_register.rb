@@ -27,7 +27,7 @@ class CashRegister
     else 
       q = quantity[0]
     end 
-    q.times do ITEMS << title 
+    q.times {ITEMS << title} 
     @prev_total = @total 
     @total += price * q
   end
