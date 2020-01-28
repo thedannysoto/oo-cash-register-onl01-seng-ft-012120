@@ -22,12 +22,12 @@ class CashRegister
   end 
   
   def add_item(title, price, *quantity)
-      ITEMS << title  
     if quantity.empty?
       q = 1
     else 
       q = quantity[0]
     end 
+    q.times do ITEMS << title 
     @prev_total = @total 
     @total += price * q
   end
