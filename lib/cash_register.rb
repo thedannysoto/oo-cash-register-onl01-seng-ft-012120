@@ -14,6 +14,7 @@ class CashRegister
   end 
   
   def discount(*discount)
+    binding.pry 
     if !discount.empty? 
       @discount = 20
     end 
