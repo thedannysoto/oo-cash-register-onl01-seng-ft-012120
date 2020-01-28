@@ -22,6 +22,7 @@ class CashRegister
   end 
   
   def add_item(title, price, *quantity)
+    binding.pry 
     @items << title 
     if quantity.empty?
       q = 1
