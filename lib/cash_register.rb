@@ -23,7 +23,7 @@ class CashRegister
     else 
       quantity = quantity[0]
     end 
-    
+    binding.pry
     @prev_total = @total 
     @total += price * quantity
   end
