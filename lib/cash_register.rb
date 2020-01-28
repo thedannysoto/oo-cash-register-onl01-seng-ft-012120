@@ -5,6 +5,7 @@ class CashRegister
   attr_accessor :total 
   @discount = 0 
   @prev_total = 0 
+  @items = []
   
   def initialize(*discount)
      discount(discount)
@@ -21,6 +22,7 @@ class CashRegister
   end 
   
   def add_item(title, price, *quantity)
+    @items << title 
     if quantity.empty?
       q = 1
     else 
