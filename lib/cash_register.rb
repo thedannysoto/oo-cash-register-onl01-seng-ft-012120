@@ -18,8 +18,7 @@ class CashRegister
   end 
   
   def add_item(title, price, *quantity)
-    binding.pry 
-    if quantity = []
+    if quantity.empty?
       q = 1
     else 
       q = quantity[0]
