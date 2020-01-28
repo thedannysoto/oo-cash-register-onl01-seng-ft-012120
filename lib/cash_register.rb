@@ -22,7 +22,7 @@ class CashRegister
   end 
   
   def add_item(title, price, *quantity)
-      binding.pry 
+      ITEMS << title  
     if quantity.empty?
       q = 1
     else 
@@ -42,7 +42,7 @@ class CashRegister
   end 
   
   def items
-    @items
+    ITEMS 
   end 
   
   def void_last_transaction
