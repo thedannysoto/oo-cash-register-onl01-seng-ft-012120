@@ -22,6 +22,8 @@ class CashRegister
       quantity = 1
     else 
       quantity = quantity[0]
+    end 
+    
     @prev_total = @total 
     @total += price * quantity
   end
