@@ -18,12 +18,12 @@ class CashRegister
   end 
   
   def add_item(title, price, *quantity)
+    binding.pry 
     if quantity = []
       q = 1
     else 
       q = quantity[0]
     end 
-    binding.pry
     @prev_total = @total 
     @total += price * q
   end
