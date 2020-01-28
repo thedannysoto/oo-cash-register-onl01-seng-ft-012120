@@ -31,6 +31,7 @@ class CashRegister
     if @discount != 0 
       @total *= 1 - (@discount / 100)
     end 
+  end 
   
   
   
