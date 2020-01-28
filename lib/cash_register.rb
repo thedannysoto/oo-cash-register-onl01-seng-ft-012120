@@ -14,7 +14,7 @@ class CashRegister
   
   def discount(*discount)
     if discount.empty?
-      @discount = 0 
+      @discount = 20 
     elsif !discount[0].empty? 
       @discount = 20
     end 
