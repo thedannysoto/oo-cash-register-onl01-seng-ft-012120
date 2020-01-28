@@ -3,6 +3,7 @@ require 'pry'
 class CashRegister
   
   attr_accessor :total 
+  @discount = 0 
   
   def initialize(*discount)
     if discount != "0"
